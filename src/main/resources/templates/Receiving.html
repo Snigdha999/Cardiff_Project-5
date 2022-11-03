@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/send">Add more?</a>
+<p>Modules</p>
+<table>
+    <thead>
+    <tr>
+        <th>Module Code</th>
+        <th>Module Title</th>
+        <th>Credits</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="modul:${modules}">
+        <td th:text="${modul.moduleCode}"></td>
+        <td th:text="${modul.moduleTitle}"></td>
+        <td th:text="${modul.credits}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
